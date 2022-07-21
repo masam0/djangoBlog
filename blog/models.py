@@ -7,7 +7,7 @@ class Post(models.Model):
   date_updated = models.DateTimeField('date updated', null=True)
   content = models.TextField()
   is_published = models.BooleanField()
-  likes = models.IntegerField()
+  likes = models.IntegerField(default=0)
 
   def __str__(self):
       return self.title
