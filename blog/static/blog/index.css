@@ -1,0 +1,22 @@
+.articleSummary-Block {
+  padding: 30px 20px;
+  margin-top: 18px;
+  background-color: #FFFFFF;
+}
+
+.articleSummary-Block:first-child {
+  margin-top: 0;
+}
+.articleSummary-Block h2 {
+  margin: 11px 0;
+}
+
+.reactions {
+  display: flex;
+  flex-direction: row;
+  margin-top: 45px;
+}
+
+.reactions-spacer {
+  width: 27px;
+}

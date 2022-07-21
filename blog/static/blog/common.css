@@ -1,5 +1,22 @@
 h1, h2, h3, h4, h5, h6, p, li, label {
   font-family: 'Noto Sans JP', sans-serif;
+  color: #3D3F3E;
+  margin: 0;
+}
+h3,h4,h5,h6 {
+  font-weight: 400;
+}
+
+h2{
+  font-size: 24px;
+}
+
+h4{
+  font-size: 14px;
+}
+
+h5 {
+  font-size: 10px;
 }
 
 body {
@@ -29,13 +46,13 @@ header li, footer p {
 }
 
 header {
+  position: sticky;
+  top: 0;
   margin-top: 115px;
   font-size: 24px;
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
   font-size: 14px;
 }
 
@@ -55,9 +72,9 @@ main {
 }
 
 article {
-  flex-grow: 4;
-  height: 100px;
-  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 7;
 }
 
 .dividor {
@@ -65,8 +82,7 @@ article {
 }
 
 nav {
-  flex-grow: 1;
-  height: 100px;
+  flex-grow: 3;
   background-color: #FFFFFF;
 }
 
