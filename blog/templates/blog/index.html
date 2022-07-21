@@ -1,1 +1,11 @@
 {% extends "blog/body.html" %}
+{% block article%}
+  {% if latest_posts %}
+    <ul>
+      {% for post in latest_posts %}
+        <li>{{ post.title }}</li>
+      {% endfor %}
+    </ul>
+  {% else %}
+  {% endif %}
+{% endblock %}
