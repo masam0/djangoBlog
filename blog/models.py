@@ -1,3 +1,4 @@
+from datetime import timezone
 from unittest import defaultTestLoader
 from django.db import models
 
@@ -5,11 +6,10 @@ class Post(models.Model):
   title = models.CharField(max_length=200, unique=True)
   slug = models.SlugField(max_length=200, unique=True)
   date_published = models.DateTimeField('date published')
-  date_updated = models.DateTimeField('date updated', null=True)
-  content = models.TextField()
+  date_updated = models.DateTimeField('date updated')
+  content = models.TextField(editable=True)
   is_published = models.BooleanField()
   likes = models.IntegerField(default=0)
-  top_image = models.FilePathField(default="")
 
   def __str__(self):
       return self.title
