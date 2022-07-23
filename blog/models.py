@@ -1,4 +1,3 @@
-from datetime import timezone
 from unittest import defaultTestLoader
 from django.db import models
 
