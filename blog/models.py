@@ -1,3 +1,4 @@
+from unittest import defaultTestLoader
 from django.db import models
 
 class Post(models.Model):
@@ -8,6 +9,7 @@ class Post(models.Model):
   content = models.TextField()
   is_published = models.BooleanField()
   likes = models.IntegerField(default=0)
+  top_image = models.FilePathField(default="")
 
   def __str__(self):
       return self.title
