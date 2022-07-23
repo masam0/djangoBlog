@@ -4,13 +4,18 @@
     <div class="articleSummary">
       {% for post in latest_posts %}
         <div class="articleSummary-Block">
-          <h5>{{ post.date_published | date:"Y年m月d日 G:i:s" }}</h5>
-          <h2>{{ post.title }}</h2>
-          <h4>タグ: </h4>
-          <div class="reactions">
-            <h4>いいね: {{ post.likes }}件</h4>
-            <div class="reactions-spacer"></div>
-            <h4>コメント: {{ post.comments }}件</h4>
+          <div class="text-Block">
+            <h5>{{ post.date_published | date:"Y年m月d日 G:i:s" }}</h5>
+            <h2>{{ post.title }}</h2>
+            <h4>タグ: </h4>
+            <div class="reactions">
+              <h4>いいね: {{ post.likes }}件</h4>
+              <div class="reactions-spacer"></div>
+              <h4>コメント: {{ post.comments }}件</h4>
+            </div>
+          </div>
+          <div class="img-Block">
+            <img src="{{ post.top_image }}" alt="{{ post.title }}">
           </div>
         </div>
       {% endfor %}

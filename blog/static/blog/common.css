@@ -19,12 +19,19 @@ h5 {
   font-size: 10px;
 }
 
+p {
+  font-size: 14px;
+}
+
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
 
+  margin: 0;
+
   background-color: #F1EDE5;
+  font-size: 14px;
   font-family: sans-serif;
 }
 
@@ -84,5 +91,85 @@ article {
 nav {
   flex-grow: 3;
   background-color: #FFFFFF;
+  max-width: 289px;
+
+  height: fit-content;
+
+  padding: 19px 14px;
+  font-size: 10px;
 }
 
+nav h4 {
+  font-weight: 700;
+}
+
+.navBlock {
+  margin-top: 19px;
+  padding: 10px 4px 7px;
+
+  /*font-size: 10px;*/
+}
+
+.navBlock li{
+  list-style-type: none;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+
+  padding: 8px 4px 27px;
+
+  border-bottom: #F1EDE5 solid 1px;
+}
+
+.bioHeader-Block {
+  margin-bottom: 11px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.bioImage-Block {
+  margin-right: 9px;
+
+  width: 32px;
+  height: 32px;  
+  border-radius: 16px;
+
+  background-color: #D9D9D9;
+}
+
+.bioDetails-Block {
+  padding: 0 8px;
+}
+
+.tags-Block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding: 0 21px;
+}
+
+.years-Block {
+  display: flex;
+  flex-direction: column;
+  padding: 0 21px;
+}
+
+.nav-Item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 14px;
+
+  background-color: #F1EDE5;
+
+  width: 60px;
+  height: 20px;
+  border-radius: 5px;
+}
