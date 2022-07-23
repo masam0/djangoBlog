@@ -1,9 +1,10 @@
 {% extends "blog/body.html" %}
 {% block article%}
+  <article>
   {% if latest_posts %}
     <div class="articleSummary">
       {% for post in latest_posts %}
-        <div class="articleSummary-Block">
+        <a class="articleSummary-Block anchor-Block" href="/blog/{{ post.slug }}">
           <div class="text-Block">
             <h5>{{ post.date_published | date:"Y年m月d日 G:i:s" }}</h5>
             <h2>{{ post.title }}</h2>
@@ -17,9 +18,10 @@
           <div class="img-Block">
             <img src="{{ post.top_image }}" alt="{{ post.title }}">
           </div>
-        </div>
+        </a>
       {% endfor %}
     </div>
   {% else %}
   {% endif %}
+  </article>
 {% endblock %}

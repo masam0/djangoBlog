@@ -23,6 +23,11 @@ p {
   font-size: 14px;
 }
 
+a.anchor-Block {
+  text-decoration: none;
+  color: #3D3F3E;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -84,6 +89,10 @@ article {
   flex-grow: 7;
 }
 
+article.content {
+  background-color: #FFFFFF;
+}
+
 .dividor {
   width: 34px;
 }
@@ -138,7 +147,8 @@ nav h4 {
   height: 32px;  
   border-radius: 16px;
 
-  background-color: #D9D9D9;
+  background-image: url("/static/blog/images/profile.jpeg");
+  background-size: contain;
 }
 
 .bioDetails-Block {
