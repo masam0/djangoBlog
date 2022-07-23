@@ -21,20 +21,19 @@
   <div class="navBlock tag">
     <h4>タグ</h4>
     <ul class="tags-Block">
-      <li class="nav-Item">
-        スクラム
-      </li>
+      {% for tag in tags %}
+        <li class="nav-Item">
+          {{ tag.name }}
+        </li>
+      {% endfor %}
       </ul>
   </div>
   <div class="navBlock archive">
-    <h4>月別アーカイブ</h4>
+    <h4>年別アーカイブ</h4>
     <ul class="years-Block">
-      <li class="nav-Item">2022年</li>
-      <ul class="months-Block">
-        <li class="nav-Item">1月</li>
-        <li class="nav-Item">2月</li>
-      </ul>
-      <li class="nav-Item">2021年</li>
+      {% for year in years %}
+      <li class="nav-Item">{{ year | date:"Y年" }}</li>
+      {% endfor %}
     </ul>
   </div>
 </nav>
